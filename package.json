@@ -1,18 +1,20 @@
 {
-  "name": "yoga-hive",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.1.0",
-    "@cloudflare/workers-types": "^4.20240405.0",
-    "typescript": "^5.0.4",
-    "vitest": "1.3.0",
-    "wrangler": "^3.0.0"
-  }
+	"name": "yoga-hive",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"dependencies": {
+		"graphql-yoga": "5.3.0",
+		"graphql": "16.8.1",
+		"@graphql-hive/client": "0.32.0-alpha-20240415092429-08eba963b2bb3748fa1dd4d425d06ea99d5bdca7"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240405.0",
+		"typescript": "^5.0.4",
+		"wrangler": "^3.0.0"
+	}
 }
